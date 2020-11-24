@@ -116,7 +116,7 @@ export default function App() {
     await getLocation()
     const data = await getCurrentWeather(locationCoords)
 
-    // Vem da api nessa ordem [currentTemperature, temperatureMin, temperatureMax, locationName, wind, humidity]
+    
 
     setCurrentTemperature(convertKelvinToC(data[0]))
     setTemperatureMin(convertKelvinToC(data[1]))
